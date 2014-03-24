@@ -37,6 +37,7 @@ describe 'sentence_maker' do
     sentence_maker(first_sentence).should eq "All my socks are dirty."
   end
 
+# possible error?
   it "returns the grammatically correct sentence of the second sentence" do
     sentence_maker(second_sentence).should eq "Alaska has over 586 thousand miles."
   end
