@@ -20,7 +20,7 @@
 
 # 2. Initial Solution
 #
-=begin
+
 def total(array)
   array.inject(0) {|memo,n| memo + n}
 end
@@ -28,7 +28,7 @@ end
 def sentence_maker(array)
   array.join(" ").capitalize! + "."
 end
-=end
+
 
 # 3. Refactored Solution
 
@@ -43,3 +43,18 @@ def sentence_maker(array)
 end
 
 # 4. Reflection 
+
+# This challenge was much easier to concentrate on with a partner.
+# My pair partner was familiar and comfortable with the environment.
+# Because of him, I was able to focus my energy mostly on coding.
+# I like coding challenges.  The problem-solving aspect seems to be 
+# my comfort zone.  However, I'm still not comfortable installing
+# software/programs because I never know if I'm possibly screwing
+# up the settings while I go through the setup.  Even after I setup
+# the program, there's me having to go through an unfamiliar user
+# interface or unfamiliar environment.  I know that's just part
+# of being a programmer and it's somthing that I need to get used to.
+# Good thing I'm getting a lot of practice.  I forced myself to figure
+# out how to setup everything on my own (without asking my group
+# questions like I desparately wanted to).  Add 1 point of confidence
+# to me scorecard, please  =)  
