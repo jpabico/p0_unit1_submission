@@ -20,6 +20,7 @@
 
 # 2. Initial Solution
 #
+=begin
 def total(array)
   array.inject(0) {|memo,n| memo + n}
 end
@@ -27,7 +28,7 @@ end
 def sentence_maker(array)
   array.join(" ").capitalize! + "."
 end
-
+=end
 
 # 3. Refactored Solution
 
