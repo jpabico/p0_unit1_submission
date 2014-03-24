@@ -31,6 +31,14 @@ end
 
 # 3. Refactored Solution
 
+# improve variable name
+def total(num_array)
+  num_array.inject(0) {|memo,n| memo + n}
+end
 
+# improve syntax using string interpolation
+def sentence_maker(array)
+  "#{array.join(" ").capitalize!}."
+end
 
 # 4. Reflection 
