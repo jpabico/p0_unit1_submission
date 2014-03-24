@@ -19,7 +19,7 @@
 
 
 # 2. Initial Solution
-
+#
 def total(array)
   array.inject(0) {|memo,n| memo + n}
 end
