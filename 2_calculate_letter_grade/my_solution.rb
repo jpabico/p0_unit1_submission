@@ -48,15 +48,15 @@ def get_grade (array)
 	 
 	case average
       when 90..100
-      return "A"
+      "A"
      when 80...90
-      return "B"
+      "B"
      when 70...80
-      return  "C"
+      "C"
      when 60...70
-      return  "D"
+      "D"
      else
-      return  "F"
+      "F"
    end
 	
 end
