@@ -21,7 +21,7 @@
 # 2. Initial Solution
 
 def total(array)
-  array.inject(0) {|memo,n| memo+n}
+  array.inject(0) {|memo,n| memo + n}
 end
 
 def sentence_maker(array)
