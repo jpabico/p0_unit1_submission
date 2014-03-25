@@ -56,7 +56,7 @@
 
 def get_grade (array)
 	
-	average = array.inject(){|memo, n| memo + n} / (array.length)
+	average = array.inject{|memo, n| memo + n} / (array.length)
 	 
 	case average
       when 90..100
@@ -74,3 +74,13 @@ def get_grade (array)
 end
 
 # 4. Reflection 
+# This was a good exercise.  As usual, I had a great partner to work 
+# with.  But I also had a chance to revisit and review certain topics
+# covered earlier (Case conditionals and the inject method for arrays).
+# My partner has a more detailed pseudocode than I was used to, but it
+# also made it easier to follow the logic and convert to code.  I was
+# to see how much we were able to refactor our code.  I'm especially
+# surprised that we were able to remove the return statements in the 
+# case conditionals.  It makes me wonder if that's always the case, or did
+# we set up our code in such a way that we didn't need to include return 
+# in this scenario?
