@@ -53,3 +53,9 @@ def median(myArray)
 end
 
 # 4. Reflection 
+# This was a good thinking challenge for me.  It had me thinking of a logically.
+# A lot of these array and loop type of problems force me to be careful about
+# the way I keep track of elements and counting in general.  I've learned to 
+# appreciate pseudocoding beforehand and refactoring afterwards.  Pseocoding 
+# organizes my thoughts and refactoring solidifies my understanding.  It also 
+# helps me look into alternative (and sometimes more efficient) solutions.
