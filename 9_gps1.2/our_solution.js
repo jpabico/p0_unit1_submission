@@ -64,6 +64,12 @@ for(var i = 0;i < celebArray.length;i++){
   celebArray[i].display();
 }
 
-
-
-
+// Reflection
+// I enjoyed this GPS.  My partner, Jake was very smart and confident.
+// I had little worries that he was guiding me in the right direction 
+// when he was the navigator.  And he followed directions well as a driver.  
+// As noted above, I didn't refactor our solution because it seemed to be
+// as efficient and readable as we could make it.  We had started off using 
+// object constructors rather than object literal notation.  Tyler made
+// the process smooth and enjoyable, offering us options in ways of
+// accomplishing our goals for the session.  
