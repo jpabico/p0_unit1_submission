@@ -16,9 +16,10 @@ def my_hash_finding_method(hash, age)
 end
 
 # Identify and describe the ruby method you implemented. 
-# 
-#
-#
+# I used Array#select which takes block as a parameter and returns all matches in an Array
+# I used String#include? method which takes a parameter and returns true if there is a match and false otherwise 
+# I used Hash#select which is same as Array#select but takes both key value pairs as block parameters
+# I used Hash#keys method which returns list of keys of corresponding hash in an Array
 
 # Person 2
 def my_array_modification_method(source, thing_to_modify)
@@ -45,18 +46,38 @@ end
   end
 
 # Identify and describe the ruby method you implemented. 
-# 
-#
-#
+
+# 1) I used .map! which is a destructive method that produces a new array 
+# containing the results of running the block of code for each element of 
+# the array it's used on
+
+# 2) I used .sort which sorts the elements of an array in ABC order
+# (numbers before uppercase letters before lowercase letters)
+
+# 3) I used .uniq which removes duplicate elements in the returned array
+# 4) I used .sort_by which sorts a hash using a set of keys and values
 
 
 # Person 4
-def my_array_deletion_method(source, thing_to_delete)
-  #Your code here!
+
+def my_array_deletion_method(source, thing_to_delete) 
+  source.delete_if {|x| x.class.to_s == "String" && x.include?(thing_to_delete) == true}
 end
 
 def my_hash_deletion_method(source, thing_to_delete)
-  #Your code here!
+  source.delete_if {|k, v| k.to_s == thing_to_delete}
+end
+
+def my_deletion_method(source, thing_to_delete)  
+  if source.class.to_s == "Array"
+  my_array_deletion_method(source, thing_to_delete)
+  end
+
+  if source.class.to_s == "Hash"
+  my_hash_deletion_method(source, thing_to_delete)
+  end
+
+  return source
 end
 
 # Identify and describe the ruby method you implemented. 
@@ -80,8 +101,13 @@ p my_deletion_method(i_want_pets, "a") == ["I", 4, "pets", "but", "I", "only", 3
 p my_deletion_method(my_family_pets_ages, "George") == {"Evi" => 8, "Hoobie" => 5, "Bogart" => 6, "Poly" => 6, "Annabelle" => 2, "Ditto" => 5}
 
 # Reflect!
-# 
-# 
-# 
-# 
-# 
+# This was a tricky but rewarding challenge.  I was stuck for a while trying to figure out
+# why my code wasn't passing when I ran rspec.  Then I reread the directions and said that it
+# wouldn't pass unless every group member's solution was there.  Once I took that into account,
+# all was ok with the world again.  I need to remember what happened here so that I won't be so
+# frustrated in the future - that's the lesson I learned!  I'm also getting used to reading
+# Ruby Docs.  I found it difficult in the beginning because, unlike my regular sources like
+# Stack Overflow and w3schools, Ruby Docs didn't just come out and explain how to do something.
+# Instead, it just shows possible commands and their related syntaxes.  Understanding the concept
+# is largely left to the reader.  I'm getting better though!
+
