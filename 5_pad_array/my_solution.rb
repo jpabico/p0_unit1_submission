@@ -18,33 +18,33 @@
 
 
 # 2. Initial Solution
-class Array
-  def pad(min_size,opt_pad=nil)
-    new_array =  Array.new() + self
-    array_length = self.length
-    pad_size = min_size - array_length
-    if min_size <= array_length
-      return new_array
-    elsif min_size > array_length
-      pad_size.times do
-        new_array.push(opt_pad)
-      end
-      return new_array
-    end
-  end
+# class Array
+#   def pad(min_size,opt_pad=nil)
+#     new_array =  Array.new() + self
+#     array_length = self.length
+#     pad_size = min_size - array_length
+#     if min_size <= array_length
+#       return new_array
+#     elsif min_size > array_length
+#       pad_size.times do
+#         new_array.push(opt_pad)
+#       end
+#       return new_array
+#     end
+#   end
   
-  def pad!(min_size,opt_pad=nil)
-    extra = min_size - self.length
-    if min_size <= self.length
-      self 
-    elsif min_size > self.length
-      extra.times do
-        self.push(opt_pad)
-      end
-      self
-    end
-  end
-end
+#   def pad!(min_size,opt_pad=nil)
+#     extra = min_size - self.length
+#     if min_size <= self.length
+#       self 
+#     elsif min_size > self.length
+#       extra.times do
+#         self.push(opt_pad)
+#       end
+#       self
+#     end
+#   end
+# end
 
 
 # 3. Refactored Solution
