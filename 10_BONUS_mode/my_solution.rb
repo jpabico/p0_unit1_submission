@@ -14,7 +14,13 @@
 
 
 # 2. Initial Solution
-
+nums = [2, 4, 6, 7, 8, 7, 9, 0, 2, 7, 5, 7, 3, 7, 1, 72]
+freqs = Hash.new(0)
+nums.each { |num| freqs[num] += 1 }
+freqs = freqs.sort_by {|x,y| y }
+freqs.reverse!
+puts freqs[0][0]
+freqs.each {|num, freq| puts "The number " + num.to_s + " occurs " + freq.to_s + " time(s)"}
 
 
 
