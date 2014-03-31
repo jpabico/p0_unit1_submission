@@ -4,7 +4,7 @@
 # include it in this file. Also make sure everything that isn't code
 # is commented in the file.  
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge with Eoin McMillan
 
 # 1. Pseudocode
 
@@ -41,22 +41,20 @@ def mode(array)
 end
 
 
-
-# nums = [2, 4, 6, 7, 8, 7, 9, 0, 2, 7, 5, 7, 3, 7, 1, 72]
-# freqs = Hash.new(0)
-# nums.each { |num| freqs[num] += 1 }
-# freqs = freqs.sort_by {|x,y| y }
-# freqs.reverse!
-# puts freqs[0][0]
-# freqs.each {|num, freq| puts "The number " + num.to_s + " occurs " + freq.to_s + " time(s)"}
-
-
-
 # 3. Refactored Solution
 
 
 
 # 4. Reflection 
-
+# This was a difficult problem to FINISH.  Starting it was no problem.
+# Luckily, I worked with a partner who was meticulous, resourceful and
+# a great problem solver.  We were able to keep track of each number and 
+# its frequency from the start. The problem after that was we weren't 
+# always sure about our answer format after adding additional code (e.g. 
+# "What do we have now? A new array? The original array? A hash? A 
+# sorted array?")  We had to look at the spec a few times to figure out
+# where we were going wrong.  It helped that my partner for this challenge
+# had the insight to test and print the output of each additional line of
+# code we added to our existing skeleton.  
 
 
