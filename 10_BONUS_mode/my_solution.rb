@@ -22,26 +22,35 @@
 
 # # 2. Initial Solution
 
-def mode(array)
-    freqs = Hash.new(0)
-    array.each { |element| freqs[element] +=1 }
+# def mode(array)
+#     freqs = Hash.new(0)
+#     array.each { |element| freqs[element] +=1 }
     
-    freqs = freqs.sort_by { |x,y| y }
-    freqs.reverse!
-    freqs.keep_if { |x,y| y == freqs[0][1] }
-    freqs.flatten!
-    filter = []
-    for i in 0...freqs.length
-    	if i%2==0
-    	  filter << freqs[i]
-    	end
-    end
-    return filter.sort
+#     freqs = freqs.sort_by { |x,y| y }
+#     freqs.reverse!
+#     freqs.keep_if { |x,y| y == freqs[0][1] }
+#     freqs.flatten!
+#     filter = []
+#     for i in 0...freqs.length
+#     	if i%2==0
+#     	  filter << freqs[i]
+#     	end
+#     end
+#     return filter.sort
 
-end
+# end
 
 
 # 3. Refactored Solution
+
+def mode(array)
+    freq = Hash.new(0)
+    array.each { |element| freq[element] +=1 }
+    freq = freq.sort_by { |x,y| y }.reverse!
+    freq.keep_if { |x,y| y == freq[0][1] }.flatten!
+    return freq.select {|x| freq.index(x).even?}.sort
+end
+
 
 
 
