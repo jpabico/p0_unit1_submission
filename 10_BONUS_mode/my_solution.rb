@@ -47,7 +47,7 @@ def mode(array)
     freq = Hash.new(0)
     array.each { |element| freq[element] +=1 } # create hash object:frequency
     freq = freq.sort_by { |x,y| y }.reverse! # sort-largest value frequency 1st
-    freq.keep_if { |x,y| y == freq[0][1] }.flatten! # keep keys w/largest values
+    freq.keep_if { |x,y| y == freq[0][1] }.flatten!.uniq # keep keys w/largest values
     return freq.select {|x| freq.index(x).even?}.sort #sort only the keys
 end
 
